@@ -2,6 +2,7 @@ const jokeButton = document.getElementById('jokeButton');
 const answerButton = document.getElementById('answerButton');
 const jokeText = document.getElementById('jokeText');
 const answerText = document.getElementById('answerText');
+const resetButton = document.getElementById('resetButton');
 
 let currentJoke = null;
 
@@ -25,5 +26,13 @@ const showAnswer = () => {
     answerText.style.display = 'block';
 };
 
+const resetJoke = () => {
+    jokeText.innerText = '';
+    answerButton.style.display = 'none';
+    answerText.style.display = 'none';
+    answerText.innerText = '';
+};
+
 jokeButton.addEventListener('click', fetchRandomJoke);
 answerButton.addEventListener('click', showAnswer);
+resetButton.addEventListener('click', resetJoke);
