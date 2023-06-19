@@ -61,6 +61,17 @@ button:hover {
     /* Jaune */
 }
 
+/* Réponse de la blague affichée */
+#answerText {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #c22027;
+    /* Rouge */
+    text-shadow: 1px 1px #f2e62b;
+    /* Jaune */
+}
+
 /* Footer */
 footer {
     text-align: center;
