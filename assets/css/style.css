@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-    --color-primary: #c22027;
-    --color-secondary: #f2e62b;
+    --color-secondary: #c22027;
+    --color-primary: #f2e62b;
 }
 
 html {
@@ -9,18 +9,21 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e10076
 }
 
 /* En-tête */
 .header {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 h1 {
     color: var(--color-primary);
-    text-shadow: 1px 1px var(--color-secondary);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #carambarLogo {
@@ -28,6 +31,7 @@ h1 {
     margin: 0 auto;
     max-width: 200px;
     width: 100%;
+
 }
 
 /* Bouton */
@@ -35,7 +39,7 @@ button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -55,46 +59,51 @@ button:hover {
 #jokeText,
 #answerText {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
-    color: var(--color-primary);
-    text-shadow: 1px 1px var(--color-secondary);
+    color: var(--color-secondary);
+    text-shadow: 1px 1px var(--color-primary);
 }
 
 .chatbox {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 400px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 40px;
     background-color: #f2f2f2;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .chatbox p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #aa085c;
+    color: #fff;
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
-    color: black;
 }
 
 .resetButton {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     background-color: var(--color-primary);
     color: var(--color-secondary);
